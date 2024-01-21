@@ -74,9 +74,6 @@ void thread_even_manager()
 {
     while(true)
     {
-        //ThisThread::sleep_for(rand()%100);
-        //ThisThread::sleep_for(1);
-        //ThisThread::sleep_for(100);
         int even_value = 2*(rand()%100);
         send_message(even_value, "Even");
     }
@@ -86,8 +83,6 @@ void thread_odds_manager()
 {
     while(true)
     {
-        //ThisThread::sleep_for(rand()%100);
-        //ThisThread::sleep_for(100);
         int even_value = 2*(rand()%100) + 1;
         send_message(even_value, "Odds");
     }
@@ -97,9 +92,6 @@ void thread_first_manager()
 {
     while(true)
     {
-        //ThisThread::sleep_for(rand()%3*500);
-        //ThisThread::sleep_for(1);
-        //ThisThread::sleep_for(100);
         get_message("First");
     }
 }
@@ -108,9 +100,6 @@ void thread_second_manager()
 {
     while(true)
     {
-        //ThisThread::sleep_for(rand()%3*500);
-        //ThisThread::sleep_for(1);
-        //ThisThread::sleep_for(100);
         get_message("Second");
     }
 }
@@ -119,9 +108,6 @@ void thread_third_manager()
 {
     while(true)
     {
-        //ThisThread::sleep_for(rand()%3*500);
-        //ThisThread::sleep_for(1);
-        //ThisThread::sleep_for(100);
         get_message("Third");
     }
 }
